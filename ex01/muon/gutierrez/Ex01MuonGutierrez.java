@@ -16,6 +16,11 @@ public class Ex01MuonGutierrez {
      */
     public static void main(String[] args) {
         System.out.println("Favorite Formula One Drivers");
+        
+        String name1 = "Charles Leclerc";
+        String team1 = "Scuderia Ferrari";
+        int exp1 = 5;
+        int podiums1 = 18;
     }
     
 }
