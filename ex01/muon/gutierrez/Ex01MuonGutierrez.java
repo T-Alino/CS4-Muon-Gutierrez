@@ -21,6 +21,7 @@ public class Ex01MuonGutierrez {
         String team1 = "Scuderia Ferrari";
         int exp1 = 5;
         int podiums1 = 18;
+        int wins1 = 5;
     }
     
 }
