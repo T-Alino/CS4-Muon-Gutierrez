@@ -3,30 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ex01.muon.gutierrez;
-
+package ex01muongutierrez;
 /**
  *
  * @author MUON
  */
 public class Ex01MuonGutierrez {
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // header
-        System.out.println("Favorite Formula 1 Drivers");
+        System.out.print("Favorite Formula 1 Drivers\n");
         
         // driver 1 information
+        int driverNum1 = 16;
         String name1 = "Charles Leclerc";
         String team1 = "Scuderia Ferrari";
         String nat1 = "Monegasque";
         int exp1 = 5;
-        int podiums1 = 19;
+        int podiums1 = 20;
         int wins1 = 5;
         
         // driver 2 information
+        int driverNum2 = 55;
         String name2 = "Carlos Sainz";
         String team2 = "Scuderia Ferrari";
         String nat2 = "Spanish";
@@ -35,6 +35,7 @@ public class Ex01MuonGutierrez {
         int wins2 = 1;
         
         // driver 3 information
+        int driverNum3 = 44;
         String name3 = "Lewis Hamilton";
         String team3 = "Mercedes-AMG Petronas";
         String nat3 = "British";
@@ -44,6 +45,7 @@ public class Ex01MuonGutierrez {
         
         // driver 1 output statements
         System.out.print("\n#1\n");
+        System.out.print("Driver number: " + driverNum1 + "\n");
         System.out.print("Name: " + name1 + "\n");
         System.out.print("Team: " + team1 + "\n");
         System.out.print("Nationality: " + nat1 + "\n");
@@ -53,6 +55,7 @@ public class Ex01MuonGutierrez {
         
         // driver 2 output statements
         System.out.print("\n#2\n");
+        System.out.print("Driver number: " + driverNum2 + "\n");
         System.out.print("Name: " + name2 + "\n");
         System.out.print("Team: " + team2 + "\n");
         System.out.print("Nationality: " + nat2 + "\n");
@@ -62,6 +65,7 @@ public class Ex01MuonGutierrez {
         
         // driver 3 output statements
         System.out.print("\n#3\n");
+        System.out.print("Driver number: " + driverNum3 + "\n");
         System.out.print("Name: " + name3 + "\n");
         System.out.print("Team: " + team3 + "\n");
         System.out.print("Nationality: " + nat3 + "\n");
@@ -70,7 +74,12 @@ public class Ex01MuonGutierrez {
         System.out.print("Wins: " + wins3 + "\n");
         
         // performing operations
-        System.out.print("\nCharles Leclerc and Carlos Sainz drive for the same team: ");
+        System.out.print("\nCharles Leclerc has a mathematically even driver number: ");
+            if (driverNum1 % 2 == 0) {
+                System.out.print("true\n");
+            } else
+                System.out.print("false\n");
+        System.out.print("Charles Leclerc and Carlos Sainz drive for the same team: ");
             if (team1 == team2) {
                 System.out.print("true\n");
             } else
@@ -80,6 +89,15 @@ public class Ex01MuonGutierrez {
                 System.out.print("true\n");
             } else
                 System.out.print("false\n");
+        System.out.print("Lewis Hamilton has more podiums than Charles Leclerc and Carlos Sainz combined: ");
+            if (podiums3 > (podiums1 + podiums2)) {
+                System.out.print("true\n");
+            } else
+                System.out.print("false\n");
+        System.out.print("Lewis Hamilton has more wins than Charles Leclerc and Carlos Sainz combined: ");
+            if (wins3 > (wins1 + wins2)) {
+                System.out.print("true\n");
+            } else
+                System.out.print("false\n");
     }
-    
 }
